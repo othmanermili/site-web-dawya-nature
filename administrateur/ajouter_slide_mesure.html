@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ajouter_section.css" />
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+    <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#" class="logo">
+            <img src="images/dnk.jpg" alt="">
+          <span class="nav-item">Micho</span>
+        </a></li>
+        <li><a href="acceuil.php">
+          <i class="fas fa-home"></i>
+        <span class="nav-item">Acceuil</span>
+      </a></li>
+        <li><a href="ajouter_section.html">
+            <i class="fas fa-solid fa-plus"></i>
+          <span class="nav-item">Ajouter section</span>
+        </a></li>
+        <li><a href="modifier_supprimer.php">
+            <i class="fas fa-solid fa-pen"></i>
+          <span class="nav-item">Modifier section</span>
+        </a></li>
+        <li><a href="modifier_supprimer.php">
+            <i class="fas fa-solid fa-trash"></i>
+          <span class="nav-item">Supprimer section</span>
+        </a></li>
+        <li><a href="gerer_offre.php">
+          <i class="fas fa-cog"></i>
+          <span class="nav-item">Gérer les offres</span>
+        </a></li>
+
+        <li><a href="index.php" class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item">Log out</span>
+        </a></li>
+      </ul>
+    </nav>
+    <section class="main">
+        <div class="main-top">
+          <img src="images\dawyanature.png" width="500px">
+        </div>
+        <form action="ajouter_slide_mesure.php" method="post" enctype="multipart/form-data">
+          <h1 style="text-align: center;font-size: 30px;font-weight: lighter; margin: 50px; ">Ajouter un offre</h1>
+            <table class="table" bordred>
+                <tr>
+                    <td><label for="titre">Le titre :</label></td>
+                    <td><input type="text" class="input" id="titre" name="titre" placeholder="Entrer le titre"></td>
+                </tr>
+                <tr>
+                    <td><label for="contenu">Le contenue :</label></td>
+                    <td><textarea name="contenu" id="contenu" cols="138" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="image">L'image :</label></td>
+                    <td><input type="file" id="image" name="image"></td>
+                </tr>
+            </table>
+            <button type="submit" name="ajouter">Ajouter</button>
+           
+            
+            
+            
+            
+        </form>
+    </section>
+
+    
+    
+  </div>
+</body>
+</html>
